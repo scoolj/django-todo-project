@@ -1,0 +1,16 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+
+
+{% block branding %}
+
+<div style="display: flex; flex-direction: row; align-items: center">
+    <img src={% static 'img/Logo.png' %}" class="logo" alt="Logo">
+    <h1 id="site-name" style="padding-left: 5px"><a href="{% url 'admin:index' %}"> TodoList Admin</a></h1>
+</div>
+{% endblock %}
+
+{% block extrastyle %}
+
+<link rel="stylesheet" href={% static 'css/admin/admin.css' %}
+{% endblock %}
